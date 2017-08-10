@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: tokenserver
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: tokenserver-pods
+    spec:
+      containers:
+      - image: gcr.io/<YOUR-GOOGLE-CLOUD-CLOUD-PROJECT>/token-server:1.0
+        name: tokenserver-container
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+          name: http-server
+
+
+

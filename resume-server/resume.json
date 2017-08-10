@@ -1,0 +1,147 @@
+{
+	"name": "Mario Menti",
+	"contact_phone": "+44 (0)7775 862 690",
+	"contact_email": "mario@menti.net",
+	"contact_address": "42 Glenburnie Road, London, SW17 7PY, UK",
+	"summary": "I have broad experience across technology, social media, and some (limited) dev ops knowledge. I love APIs, developer platforms, and using those to connect/extend existing solutions, as well as potentially building entirely new ones. I'm always experimenting with new technologies and have recent experience and deep interest in the conversational interface/bot space.",
+	"projects": [
+	 	{
+			"id": 1,
+			"name": "Gigfinder bot (Facebook Messenger bot)",
+			"summary": "Wondering when and where your favourite band is playing live next? Or just want to see what gigs are on tonight in your city? Message me and I'll tell you!",
+			"url": "https://www.facebook.com/gigfinderbot/",
+			"tags": [ "songkick", "facebook", "golang", "supervisord", "nginx", "amazon", "simpledb", "redis" ]
+	    	},
+	 	{
+			"id": 2,
+			"name": "Songkick Alert bot (Facebook Messenger bot)",
+			"summary": "Say hello to the Songkick Alerts bot on Facebook Messenger to set up your Songkick alerts. Once set up and activated, the bot will send you instant notifications on Messenger for any newly announced shows by the Songkick artists you're tracking.",
+			"url": "https://www.facebook.com/songkickalerts/",
+			"tags": [ "songkick", "last.fm", "facebook", "golang", "supervisord", "nginx", "amazon", "simpledb" ]
+	    	},
+	 	{
+			"id": 3,
+			"name": "songkickaway.com",
+			"summary": "Songkick is very good at letting you track the artists you are interested in in the location(s) that you live in. It's not so good if you're only somewhere for a week or so, and songkickaway.com fills that gap, it will tell you which of your tracked artists are playing at any given location and time.",
+			"url": "http://songkickaway.com",
+			"tags": [ "songkick", "python", "tornado", "supervisord", "nginx", "redis" ]
+	    	},
+	 	{
+			"id": 4,
+			"name": "Slack gig attendance bot (Slack integration)",
+			"summary": "A Slack bot that checks users' Songkick event attendance and automatically shares these to a Slack channel of your choice. As an example, we have a specific #gig Slack channel where notifications of the shows/gigs that users are planning to go to are being posted as soon as a user marks their attendance on Songkick. Includes artist images retrieved via the last.fm API.",
+			"url": "https://github.com/mmenti/songslack",
+			"tags": [ "songkick", "slack", "last.fm", "golang", "supervisord", "nginx", "simpledb" ]
+	    	},
+	 	{
+			"id": 5,
+			"name": "Slack Gigfinder bot (Slack bot)",
+			"summary": "Directly search for upcoming shows of an artist from within Slack, powered by the Songkick API.",
+			"url": "http://blog.songkick.com/2015/11/09/slack-magic/",
+			"tags": [ "songkick", "slack", "golang", "supervisord", "nginx" ]
+	    	}, 
+	 	{
+			"id": 6,
+			"name": "Kickalert Twitter bot",
+			"summary": "Get notifications of newly announced Songkick events directly on Twitter. Includes artist images retrieved via the last.fm API.",
+			"url": "http://kickalert.me",
+			"tags": [ "songkick", "twitter", "last.fm", "python", "tornado", "supervisord", "nginx", "simpledb" ]
+	    	}, 
+	 	{
+			"id": 7,
+			"name": "Songkick RSS feeds",
+			"summary": "Provide RSS feeds for various aspects of the Songkick (http://songkick.com) service, since they don't provide them natively.",
+			"url": "http://acousti.co/songkick",
+			"tags": [ "songkick", "rss", "python", "tornado", "supervisord", "nginx" ]
+	    	}, 
+	 	{
+			"id": 8,
+			"name": "Strava RSS feeds",
+			"summary": "Provide RSS feeds for various aspects of the Strava (http://strava.com) service, since they don't provide them natively.",
+			"url": "http://feedmyride.net",
+			"tags": [ "strava", "rss", "python", "tornado", "supervisord", "nginx" ]
+	    	}, 
+	 	{
+			"id": 9,
+			"name": "YO Bikeshop (YO bot)",
+			"summary": "Your bike just broke down, and you need to know where the nearest open bike shop is? YO BIKESHOP will send you a link and directions, and get you back on the road as quickly as possible. Uses the Google Places API to check location and opening times of the currently nearest bike shop.",
+			"url": "http://yobikeshop.com",
+			"tags": [ "yo", "google", "googleplaces", "python", "tornado", "supervisord", "nginx", "simpledb" ]
+	    	} 
+	],
+	"experience": [
+	 	{
+			"id": 1,
+			"name": "Awne",
+			"location": "London, UK",
+			"dates": "2016 - 2017",
+			"job_title": "Technical co-founder",
+			"summary": "Technical co-founder (with two others) of Awne, a personal relationship assistant.  Built a platform and API that lets us create content and deliver that content to users from one unified back-end to multiple potential delivery channels (messaging, bots, web, apps etc).\n Developed a Facebook Messenger bot to ask users daily questions, record user answers, and deliver tips and updates into their personal Awne home.\n Created prototypes/ proof-of-concepts for delivering Awne content (and collecting user data) via different channels (e.g. messaging, SMS, web, Amazon Alexa) via the same API-powered back-end/platform.\n Both API/platform and Messenger bots built using golang, running through supervisord and nginx.",
+			"tags": [ "golang", "api", "redis", "wit.ai", "awne", "facebook", "supervisord", "nginx", "mysql", "amazonec2", "amazonrds" ]
+	    	},
+	 	{
+			"id": 2,
+			"name": "Bitly",
+			"location": "London, UK",
+			"dates": "2011 - 2016",
+			"job_title": "Running twitterfeed.com for Bitly",
+			"summary": "Hands-on with all aspects of the service:\n Dev ops/ monitoring of servers (a cluster of 11 Red Hat Enterprise Linux servers) and service health (monitoring worker processes and queue sizes and Automatically adjusting the speed and volume of feed processing depending on service load, using a combination of monit and memcached).\n Software development (Ruby/Rails, JavaScript, RabbitMQ, MongoDB, MySql, Redis, Memcached)\n User support, via Uservoice support portal, and social media channels like Twitter and Facebook\n Social media management (Twitter, Facebook)\n Product management (new features planning/implementation, adding/connecting to additional social media channels like LinkedIn, LinkedIn Company Pages, Slack, etc).",
+			"tags": [ "ruby", "rails", "rabbitmq", "mongodb", "redis", "memcached", "monit", "nginx", "mysql", "twitterfeed", "bitly" ]
+	    	},
+	 	{
+			"id": 3,
+			"name": "Twitterfeed",
+			"location": "London, UK",
+			"dates": "2007 - 2011",
+			"job_title": "Founder",
+			"summary": "Twitterfeed allowed users to automatically publish their content (for example, blog posts or any other content that supports RSS feeds) to Twitter, Facebook, LinkedIn and other social platforms. It enabled publishers to bring content to a wider audience and track the performance through real-time stats.\n Originally conceived as a side-project to enable me, as an early adopter and fan of Twitter, to see news headlines like BBC news on Twitter directly, rather than having to visit feed readers, the service grew very quickly and became so popular that in 2009, I found seed investment from The Accelerator Group in London and Betaworks in NYC to turn twitterfeed into a business. Twitterfeed was eventually acquired by Bitly, a fellow Betaworks company, in 2011, where I continued to run it on Bitly's behalf.",
+
+			"tags": [ "ruby", "rails", "rabbitmq", "mongodb", "redis", "memcached", "monit", "nginx", "mysql", "twitterfeed", "bitly" ]
+	    	},
+	 	{
+			"id": 4,
+			"name": "GMI (GLobal Market Insite)",
+			"location": "London, UK",
+			"dates": "2006 - 2009",
+			"job_title": "Solutions Architect",
+			"summary": "Solutions Architect for GMI (Global Market Insite, Inc.), a company providing online survey software and services to companies worldwide. Consulting with clients and prospects on custom solutions and technical integration around the GMI software platform, and experimenting with application of cutting-edge technology/trends/platforms in a survey and market research technology context.\n As an example, I was one of the first people to experiment with and create virtual survey bots/ market research interviewers in the virtual world of Second Life, who were able to talk to visitors and ask them questions powered by a GMI online survey, with the replies being saved back to the online survey in real time.",
+			"tags": [ "gmi", "php", ".net", "javascript", "secondlife" ]
+	    	},
+	 	{
+			"id": 5,
+			"name": "BBC",
+			"location": "London, UK",
+			"dates": "2006",
+			"job_title": "Independent Contractor",
+			"summary": "Contract work based on BBC backstage (developer community) activities.",
+			"tags": [ "bbc", "javascript" ]
+	    	},
+	 	{
+			"id": 6,
+			"name": "SPSS",
+			"location": "London, UK",
+			"dates": "1996 - 2005",
+			"job_title": "Solutions Architect",
+			"summary": "Technical consulting with clients and prospects on custom solutions and technical integration around the SPSS MR Dimensions software platform.",
+			"tags": [ "quantime", "spss", "spssmr", "dimensions", "quancept", ".net", "javascript" ]
+	    	},
+	 	{
+			"id": 7,
+			"name": "Quantime",
+			"location": "London, UK",
+			"dates": "1995 - 1996",
+			"job_title": "Consulting Manager",
+			"summary": "Consulting Manager in charge of CATI (Computer Assisted Telephgone Interviewing) consultancy for clients.",
+			"tags": [ "quantime", "quancept", "awk", "sed", "bash", "c" ]
+	    	},
+	 	{
+			"id": 8,
+			"name": "NOP",
+			"location": "London, UK",
+			"dates": "1988 - 1995",
+			"job_title": "Associate Director, Data Processing",
+			"summary": "Involved in all aspects of CATI (Computer Assisted Telephone Interviewing) and data processing.",
+			"tags": [ "nop", "quantime", "quancept", "awk", "sed", "bash", "c" ]
+	    	}
+	]
+}

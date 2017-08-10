@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: resumeserver
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        name: resumeserver-pods
+    spec:
+      containers:
+      - image: gcr.io/<YOUR-GOOGLE-CLOUD-CLOUD-PROJECT>/resume-server:1.0
+        name: resumeserver-container
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+          name: http-server
+
+
+

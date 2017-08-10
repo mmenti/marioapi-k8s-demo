@@ -1,0 +1,52 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: contact-endpoint
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: contact-endpoint-pods
+    spec:
+      containers:
+      - image: gcr.io/i<YOUR-GOOGLE-CLOUD-CLOUD-PROJECT>/contact-endpoint:1.0
+        name: contact-endpoint-container
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+          name: http-server
+        env:
+        - name: TWILIO_SID
+          valueFrom:
+           secretKeyRef:
+            name: contact-secrets
+            key: twiliosid
+        - name: TWILIO_TOKEN
+          valueFrom:
+           secretKeyRef:
+            name: contact-secrets
+            key: twiliotoken
+        - name: TWILIO_URL
+          valueFrom:
+           secretKeyRef:
+            name: contact-secrets
+            key: twiliourl
+        - name: TWILIO_NUMBER
+          valueFrom:
+           secretKeyRef:
+            name: contact-secrets
+            key: twilionumber
+        - name: ALERT_NUMBER
+          valueFrom:
+           secretKeyRef:
+            name: contact-secrets
+            key: alertnumber
+        - name: SENDGRID_KEY
+          valueFrom:
+           secretKeyRef:
+            name: contact-secrets
+            key: sendgridkey
+
+
+

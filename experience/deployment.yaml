@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: experience-endpoint
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: experience-endpoint-pods
+    spec:
+      containers:
+      - image: gcr.io/<YOUR-GOOGLE-CLOUD-CLOUD-PROJECT>/experience-endpoint:1.0
+        name: experience-endpoint-container
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+          name: http-server
+
+
+
