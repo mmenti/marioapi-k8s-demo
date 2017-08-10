@@ -42,19 +42,6 @@ func WriteApiError(w http.ResponseWriter, errorCode int, errorStr string) {
 	w.Write(json)
 }
 
-func WriteApiSuccess(w http.ResponseWriter, successCode int, successStr string) {
-
-	apisuccess := ApiSuccess{successCode, successStr}
-	json, err := json.Marshal(apisuccess)
-	if err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
-		return
-	}
-
-	w.Header().Set("Content-Type", "application/json")
-	w.Write(json)
-}
-
 func serve(w http.ResponseWriter, r *http.Request) {
 
 	// check token, load resume, return relevant part(s)
